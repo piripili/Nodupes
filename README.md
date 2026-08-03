@@ -1,3 +1,9 @@
+# Agenda de Contactos
+
+## Descripción
+
+Proyecto desarrollado en **Java** que permite administrar una agenda de contactos desde la consola. La aplicación utiliza Programación Orientada a Objetos (POO) y permite agregar, buscar, modificar, eliminar y listar contactos.
+
 ## Funcionalidades
 
 - Agregar contactos.
