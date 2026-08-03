@@ -1,10 +1,10 @@
 # Agenda de Contactos
 
-## Descripción
+## 📌 Descripción
 
 Proyecto desarrollado en **Java** que permite administrar una agenda de contactos desde la consola. La aplicación utiliza Programación Orientada a Objetos (POO) y permite agregar, buscar, modificar, eliminar y listar contactos.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
 - Agregar contactos.
 - Buscar contactos por nombre y apellido.
@@ -14,6 +14,50 @@ Proyecto desarrollado en **Java** que permite administrar una agenda de contacto
 - Verificar si un contacto existe.
 - Mostrar espacios disponibles.
 - Verificar si la agenda está llena.
+
+## 📋 Reglas
+
+- Cada contacto tiene:
+  - Nombre
+  - Apellido
+  - Teléfono
+- El nombre y el apellido son obligatorios.
+- No se permiten contactos duplicados.
+- Dos contactos son iguales si tienen el mismo nombre y apellido, sin importar mayúsculas o minúsculas.
+- La agenda puede crearse con un tamaño definido por el usuario o con un tamaño por defecto de **10 contactos**.
+
+## 👩🏼‍💻 Tecnologías
+
+- Java
+- Programación Orientada a Objetos (POO)
+- ArrayList
+- Git y GitHub
+
+## 📂 Estructura
+
+src
+│
+├── agenda
+│   └── Agenda.java
+├── contact
+│   └── Contact.java
+└── Main.java
+
+## ▶️ Cómo ejecutar
+
+1. Clona el repositorio.
+2. Abre el proyecto en tu IDE (IntelliJ IDEA o VS Code).
+3. Ejecuta la clase `Main.java`.
+4. Usa el menú de la consola para probar las funciones.
+
+## ✅ Buenas prácticas aplicadas
+
+- Uso de clases y métodos.
+- Encapsulamiento.
+- Colecciones (`ArrayList`).
+- Nombres de variables y métodos en CamelCase.
+- Código organizado y legible.
+- Validación de datos para evitar errores.
 
 ## 👥 Colaboradores
 
@@ -34,22 +78,3 @@ Este proyecto fue planeado, diseñado y desarrollado gracias al trabajo colabora
     </tr>
 
 </table>
-
-
-## Reglas
-
-- Cada contacto tiene:
-  - Nombre
-  - Apellido
-  - Teléfono
-- El nombre y el apellido son obligatorios.
-- No se permiten contactos duplicados.
-- Dos contactos son iguales si tienen el mismo nombre y apellido, sin importar mayúsculas o minúsculas.
-- La agenda puede crearse con un tamaño definido por el usuario o con un tamaño por defecto de **10 contactos**.
-
-## Tecnologías 👩🏼‍💻👨🏼‍💻
-
-- Java
-- Programación Orientada a Objetos (POO)
-- ArrayList
-- Git y GitHub
