@@ -28,3 +28,15 @@ Este proyecto fue planeado, diseñado y desarrollado gracias al trabajo colabora
     </tr>
 
 </table>
+
+
+## Reglas
+
+- Cada contacto tiene:
+  - Nombre
+  - Apellido
+  - Teléfono
+- El nombre y el apellido son obligatorios.
+- No se permiten contactos duplicados.
+- Dos contactos son iguales si tienen el mismo nombre y apellido, sin importar mayúsculas o minúsculas.
+- La agenda puede crearse con un tamaño definido por el usuario o con un tamaño por defecto de **10 contactos**.
