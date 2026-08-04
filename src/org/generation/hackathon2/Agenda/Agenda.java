@@ -170,7 +170,11 @@ public class Agenda {
             System.out.println(BLUE + "7. " + RESET + "Revisar Espacio Disponible");
             System.out.println(RED + "8. SALIR" + RESET);
             System.out.print(BOLD + "Selecciona una opción " + CYAN + "" + RESET);
-            opcion = Integer.parseInt(scanner.nextLine());
+            try {
+                opcion = Integer.parseInt(scanner.nextLine().trim());
+            } catch (NumberFormatException e) {
+                opcion = -1; // Le asignamos un valor que no exista en tus opciones del switch
+            }
 
             switch (opcion) {
                 case 1:
@@ -254,7 +258,7 @@ public class Agenda {
                     nombre = scanner.nextLine();
                     System.out.print("Apellido del contacto: ");
                     apellido = scanner.nextLine();
-                    System.out.print("Escribe el numero numero Telefonico: ");
+                    System.out.print("Escribe el nuevo número telefonico: ");
                     telefono = scanner.nextLine();
                     updateTel(nombre,apellido,telefono);
                     continuar();
