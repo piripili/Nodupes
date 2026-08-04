@@ -24,7 +24,7 @@ public class Agenda {
     //1. Añadir contacto - Margarita
     public void addContact(Contact c) {
         if (fullAgenda()) {
-            System.out.println("La agenda está llena. No se pueden añadir mas contactos.");
+            System.out.println("La agenda está llena. No se pueden añadir más contactos.");
         } else if (existContact(c)) {
             System.out.println("El contacto ya existe.");
         } else {
@@ -70,26 +70,26 @@ public class Agenda {
     public String searchContact(String name, String lastName) {
 
         for (Contact contacto : agenda) {
-            if (contacto.getNombre().equals(name) && contacto.getApellido().equals(lastName)) {
+            if (contacto.getNombre().equalsIgnoreCase(name) && contacto.getApellido().equalsIgnoreCase(lastName)) {
                 return "Telefono: " + contacto.getTelefono();
             }
 
         }
-        return "Usuario no Encontrador";
+        return "Usuario no encontrado.";
     }
 
     //5. Eliminar contacto - Jesús
     public void removeContact(Contact c) {
         for (int i = 0; i < agenda.size(); i++) {
             Contact contacto = agenda.get(i);
-            if (contacto.getNombre().equals(c.getNombre())
-                    && contacto.getApellido().equals(c.getApellido())) {
+            if (contacto.getNombre().equalsIgnoreCase(c.getNombre())
+                    && contacto.getApellido().equalsIgnoreCase(c.getApellido())) {
                 agenda.remove(i);
                 System.out.println("Se eliminó registro con éxito.");
                 return;
             }
         }
-        System.out.println("Contacto no encontrado");
+        System.out.println("Contacto eliminado.");
     }
     //
 
@@ -98,9 +98,9 @@ public class Agenda {
     public void updateTel(String nombre, String apellido, String nuevoTelefono) {
         for (int i = 0; i < agenda.size(); i++) {
             Contact contacto = agenda.get(i);
-            if (contacto.getNombre().equals(nombre) && contacto.getApellido().equals(apellido)) {
+            if (contacto.getNombre().equalsIgnoreCase(nombre) && contacto.getApellido().equalsIgnoreCase(apellido)) {
                 contacto.setTelefono(nuevoTelefono);
-                System.out.println("El numero de telefono se ha modificado correctamente.");
+                System.out.println("El número de teléfono se ha modificado correctamente.");
                 return;
             }
         }
